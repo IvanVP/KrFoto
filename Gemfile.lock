@@ -82,6 +82,28 @@ GIT
       refinerycms-settings (~> 3.0.0)
 
 GIT
+  remote: https://github.com/refinery/refinerycms-news
+  revision: fc14e71fecec290c2ed9de7b1c51162e78da9192
+  branch: master
+  specs:
+    refinerycms-news (3.0.0)
+      acts_as_indexed (~> 0.8.0)
+      friendly_id (~> 5.0.1)
+      globalize (~> 4.0.0)
+      refinerycms-core (~> 3.0.0)
+      refinerycms-settings (~> 3.0.0)
+
+GIT
+  remote: https://github.com/refinery/refinerycms-page-images
+  revision: 24740c6ac8864ab27620a6cf99d7966b1bf71474
+  branch: master
+  specs:
+    refinerycms-page-images (3.0.0)
+      decorators (~> 1.0.0)
+      globalize (~> 4.0)
+      refinerycms-pages (~> 3.0.0)
+
+GIT
   remote: https://github.com/refinery/refinerycms-settings
   revision: 10c12da53e0c6a793497c43f6cdd2f17a97e9632
   branch: master
@@ -481,6 +503,8 @@ DEPENDENCIES
   refinerycms-acts-as-indexed (~> 2.0, >= 2.0.0)
   refinerycms-i18n!
   refinerycms-inquiries!
+  refinerycms-news!
+  refinerycms-page-images!
   refinerycms-settings!
   refinerycms-wymeditor (~> 1.0, >= 1.0.0)
   rspec-rails
