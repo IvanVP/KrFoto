@@ -71,6 +71,25 @@ GIT
       rails-i18n (~> 4.0.1)
       routing-filter (>= 0.4.0.dev)
 
+GIT
+  remote: https://github.com/refinery/refinerycms-inquiries
+  revision: c0af1f31a15bec043c5efeb522a224cfc7446c1e
+  branch: master
+  specs:
+    refinerycms-inquiries (3.0.0)
+      filters_spam (~> 0.2)
+      refinerycms-core (~> 3.0.0)
+      refinerycms-settings (~> 3.0.0)
+
+GIT
+  remote: https://github.com/refinery/refinerycms-settings
+  revision: 10c12da53e0c6a793497c43f6cdd2f17a97e9632
+  branch: master
+  specs:
+    refinerycms-settings (3.0.0)
+      friendly_id (~> 5.0, >= 5.0.1)
+      refinerycms-core (~> 3.0, >= 3.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -170,6 +189,7 @@ GEM
     ffi (1.9.6)
     figaro (1.0.0)
       thor (~> 0.14)
+    filters_spam (0.4)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
     fog (1.27.0)
@@ -460,6 +480,8 @@ DEPENDENCIES
   refinerycms!
   refinerycms-acts-as-indexed (~> 2.0, >= 2.0.0)
   refinerycms-i18n!
+  refinerycms-inquiries!
+  refinerycms-settings!
   refinerycms-wymeditor (~> 1.0, >= 1.0.0)
   rspec-rails
   rvm-capistrano

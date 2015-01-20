@@ -61,6 +61,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'refinerycms', git: 'https://github.com/refinery/refinerycms', branch: 'master'
 gem 'refinerycms-i18n', git: 'https://github.com/refinery/refinerycms-i18n', branch: 'master'
 
+gem 'refinerycms-settings', git: 'https://github.com/refinery/refinerycms-settings', branch: 'master'
+gem 'refinerycms-inquiries', git: 'https://github.com/refinery/refinerycms-inquiries', branch: 'master'
+
 
 # Add support for refinerycms-acts-as-indexed
 gem 'refinerycms-acts-as-indexed', ['~> 2.0', '>= 2.0.0']
