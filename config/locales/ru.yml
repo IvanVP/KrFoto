@@ -283,7 +283,7 @@ ru:
           preview: '(%{who}) создан %{created_at}'
     sessions:
       new:
-        hello_please_sign_in: 'Пожалуйста, войдите.'
+        hello_please_sign_in: Пожалуйста, войдите.
         sign_in: Войти
         forgot_password: Я забыл свой пароль
     users:

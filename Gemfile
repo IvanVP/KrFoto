@@ -16,6 +16,7 @@ group :development, :test do
   # gem 'thin', '~> 1.6.3'
   gem 'capistrano', '~> 2.15.5'
   gem 'rvm-capistrano'
+  gem 'capistrano-seed', '~> 0.0.2'
   gem 'debugger'
   gem 'quiet_assets'
   gem "better_errors"

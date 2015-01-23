@@ -16,7 +16,8 @@
 
           <section class="left">
             <%#= Refinery::Pages::MenuPresenter.new(refinery_menu_pages.children, self).to_html -%>
-            <%= SubMenuPresenter.new(sub_menu_pages(@page), self).to_html || "Новости" -%>
+            <%#= SubMenuPresenter.new(sub_menu_pages(@page), self).to_html || "Новости" -%>
+            <p>Новости</p>
           </section>
 
           <section class="wrapper">
