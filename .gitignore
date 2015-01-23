@@ -100,3 +100,6 @@ vendor/extensions/**/spec/dummy
 /config/database.yml
 /config/nginx.conf
 /config/deploy.rb
+
+#/config/unicorn.rb
+#/config/unicorn_init.sh
