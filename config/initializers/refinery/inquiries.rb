@@ -12,7 +12,7 @@ Refinery::Inquiries.configure do |config|
   # config.send_notifications_for_inquiries_marked_as_spam = false
 
   # Configure name in 'from' email address
-  config.from_name = "Сайт 'Фото Крыма'"
+  # config.from_name = "no-reply"
 
   # Configure the URLs to use for the inquiry functionality.
   # config.post_path           = "/contact"

@@ -1,0 +1,90 @@
+html, body {
+ height: 100%;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+  color: #505050;
+}
+
+#headerbanner {
+  text-align: center;
+}
+
+#page_container:after {
+  content: "";
+  display: block;
+  height: -1em;
+  @include media($large-screen) {
+    // This corrects white space for html tag
+    height: 16.3em;
+  }
+}
+
+#page_container,
+#header {
+  @include outer-container(1260px);
+  .main {
+    // @include omega();
+    .left {@include span-columns(2);}
+    .wrapper {
+      margin-bottom: 30px;
+      @include outer-container;
+      @include span-columns(10);
+      .center { @include span-columns(9 of 12);}
+      .right  { @include span-columns(3 of 12);}
+    }
+  }
+}
+
+#header {
+  padding-top: 30px;
+  h1 {
+    text-align: center;
+    margin: 20px 10px 50px;
+  }
+}
+
+.foto {
+  margin: 0 10px 10px;
+}
+
+.fotorama__stage__frame {
+  box-shadow: rgba(0, 0, 0, 0.14902) 7px 7px 7px 0px;
+
+}
+
+
+// The mixin above should preferably be in a file of its own. Below is the code for the object that has the texture.
+
+.texture {
+  $texture-top-background: lighten(#E3E2DE, 5%);
+  $texture-bottom-background: darken(#E3E2DE, 3%);
+  // $texture-top-background: lighten(#ddf0ef, 5%);
+  // $texture-bottom-background: darken(#ddf0ef, 3%);
+
+
+  .texture-normal {
+    // gradient color 1, gradient color 2, gradient angle, texture-number, 0=inverted or 1=normal  
+    @include texture(180deg, $texture-top-background, $texture-bottom-background, 67, 1); 
+  }
+
+  // .texture-inverted {
+  //   // gradient color 1, gradient color 2, gradient angle, texture-number, 0=inverted or 1=normal  
+  //   @include texture(180deg, $texture-top-background, $texture-bottom-background, 67, 0); 
+  // }
+}
+
+
+// footer {
+//   // @include outer-container;
+//   @include span-columns(12);
+//   text-align: center;
+//   margin: 20px 10px 50px;
+//   background-color: #ccf;
+
+// }
+
+
+

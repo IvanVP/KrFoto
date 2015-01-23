@@ -1,0 +1,81 @@
+.mainmenu{
+  $texture-top-background: lighten(#E3E2DE, 5%);
+  $texture-bottom-background: darken(#E3E2DE, 3%);
+  $texture-top-background-hovered: lighten(#E3E2DE, 1%);
+  $texture-bottom-background-hovered: darken(#E3E2DE, 10%);
+    
+  @include texture(180deg, $texture-top-background, $texture-bottom-background, 67, 1); 
+   
+  text-align: center;
+  box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+  margin-bottom: 40px;
+
+  nav ul ul {
+    display: none;
+  }
+
+    nav ul li:hover > ul {
+      display: block;
+      @include texture(180deg, $texture-top-background-hovered, $texture-bottom-background-hovered, 67, 1); 
+      color: #505050;
+    }
+
+  nav ul {
+    padding: 7px 20px 0;
+    // border-radius: 10px;  
+    list-style: none;
+    position: relative;
+    display: inline-block;
+
+  }
+
+  nav ul:after {
+    content: ""; clear: both; display: block;
+  }
+
+  nav ul li {
+    float: left;
+    text-align: left;
+  }
+
+  nav ul li a {
+    display: block; padding: 10px 30px;
+    color: #505050; text-decoration: none;
+  }
+
+  nav ul ul {
+    border-radius: 0px; padding: 0;
+    position: absolute; top: 100%;
+  }
+  nav ul ul li {
+    float: none; 
+    border-top: 1px solid #E3E2DE;
+    border-bottom: 1px solid #E3E2DE;
+    position: relative;
+    color: #505050;
+    @include texture(180deg, $texture-top-background, $texture-bottom-background, 67, 1);
+  }
+  nav ul ul li a {
+    padding: 15px 20px;
+    color: #505050;
+    min-width: 12em;
+  } 
+  nav ul ul li a:hover {
+    @include texture(180deg, $texture-top-background-hovered, $texture-bottom-background-hovered, 67, 1);
+  }
+  nav ul ul ul {
+    position: absolute; left: 100%; top:0;
+  }
+  nav ul ul ul li a {
+    min-width: 12em;
+  } 
+
+  nav ul li:hover > a {
+    color: #000;
+  }
+}
+
+nav#menu > ul {
+  margin: 0 auto;
+  @include outer-container;
+}

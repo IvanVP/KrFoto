@@ -1,0 +1,8 @@
+.mainmenu
+  .menuwrapper
+    = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html
+  
+-#
+  %header.centered-navigation.texture{:role => "banner"}
+    .centered-navigation-wrapper.menu.texture-normal
+      = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html

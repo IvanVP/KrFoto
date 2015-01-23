@@ -6,9 +6,14 @@ gem 'pg'
 gem 'figaro', '~> 1.0.0'
 gem 'unicorn'
 
+# gem 'bourbon', '4.0.2'
+gem 'bourbon', '~> 4.1.1'
+gem 'bitters', '~> 0.10.1'
+gem 'neat'
+
 group :development, :test do
   # gem 'sqlite3'
-  gem 'thin', '~> 1.6.2'
+  # gem 'thin', '~> 1.6.3'
   gem 'capistrano', '~> 2.15.5'
   gem 'rvm-capistrano'
   gem 'debugger'
@@ -33,11 +38,13 @@ group :development, :test do
 end
 
 gem 'haml', '~> 4.0.5'
-gem 'sass-rails', '~> 4.0.3'
+# gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 5.0.1'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
-gem 'turbolinks'
+# gem 'turbolinks'
+gem 'jquery-turbolinks', '~> 2.1.0'
 gem 'jbuilder', '~> 2.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
@@ -49,7 +56,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

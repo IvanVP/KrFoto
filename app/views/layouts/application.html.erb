@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<%= render "/refinery/html_tag" %>
+  <% site_bar = render('/refinery/site_bar', :head => true) -%>
+  <head>
+    <%= render "/refinery/head" %>
+  </head>
+  <body id="page<%= @page.id %>" class="texture">
+    <%= site_bar -%>
+
+    <div id="container" class="texture-normal">
+      <div id="page_container" class="texture-normal">
+        <%= render "/refinery/header" -%>
+        <%= render "/refinery/menu" -%>
+
+        <div class="main">
+
+          <section class="left">
+            <%#= Refinery::Pages::MenuPresenter.new(refinery_menu_pages.children, self).to_html -%>
+            <%= SubMenuPresenter.new(sub_menu_pages(@page), self).to_html || "Новости" -%>
+          </section>
+
+          <section class="wrapper">
+            <section class="center">
+              <%= yield %>
+            </section>
+
+            <section class="right">
+              <p> Поиск</p>
+            </section>
+          </section>
+        </div>
+        
+        <!-- <footer>
+          <%#= render "/refinery/footer" -%>
+        </footer> -->
+
+      </div>
+    </div>
+    <%= render "/refinery/javascripts" %>
+    
+
+  </body>
+</html>

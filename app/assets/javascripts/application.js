@@ -11,6 +11,12 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
+//= require fotorama
+
+// ... your other scripts here ...
+
+//   turbolinks
 //= require_tree .
+
