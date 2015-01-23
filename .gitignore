@@ -99,3 +99,4 @@ vendor/extensions/**/spec/dummy
 /config/application.yml
 /config/database.yml
 /config/nginx.conf
+/config/deploy.rb
