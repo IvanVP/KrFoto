@@ -71,14 +71,15 @@ gem 'refinerycms-inquiries', git: 'https://github.com/refinery/refinerycms-inqui
 
 
 gem 'refinerycms-page-images', git: 'https://github.com/refinery/refinerycms-page-images', branch: 'master'
-gem 'refinerycms-news', git: 'https://github.com/refinery/refinerycms-news', branch: 'master'
-gem 'refinerycms-blog', git: 'https://github.com/refinery/refinerycms-blog', branch: 'master'
+# gem 'refinerycms-news', git: 'https://github.com/refinery/refinerycms-news', branch: 'master'
+# gem 'refinerycms-blog', git: 'https://github.com/refinery/refinerycms-blog', branch: 'master'
 
 # gem 'refinerycms-search', git: 'https://github.com/refinery/refinerycms-search', branch: 'master'
 
 
 # Add support for refinerycms-acts-as-indexed
-gem 'refinerycms-acts-as-indexed', ['~> 2.0', '>= 2.0.0']
+# gem 'refinerycms-acts-as-indexed', ['~> 2.0', '>= 2.0.0']
+gem 'refinerycms-acts-as-indexed', git: 'https://github.com/refinery/refinerycms-acts-as-indexed', branch: 'master'
 
 # Add support for refinerycms-wymeditor
 gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.0']

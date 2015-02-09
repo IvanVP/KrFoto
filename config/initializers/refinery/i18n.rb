@@ -12,3 +12,4 @@ Refinery::I18n.configure do |config|
 
   config.locales = {:en=>"English", :ru=>"Русский"}
 end
+
