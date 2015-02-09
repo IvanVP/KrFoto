@@ -36,10 +36,11 @@
         </footer> -->
 
       </div>
+        <%= render "/refinery/javascripts" -%>
+        <% if Rails.env == 'production' -%>
+          <%= render "/refinery/metrics" -%>
+        <% end -%>
     </div>
-    <%= render "/refinery/javascripts" %>
-    <%= render "/refinery/metrics" %>
-    
 
   </body>
 </html>
