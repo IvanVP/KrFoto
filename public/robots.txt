@@ -1,5 +1,18 @@
 # See http://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
-#
-# To ban all spiders from the entire site uncomment the next two lines:
+
 User-agent: *
-# Disallow: /
+Disallow: /
+
+User-agent: Yandex
+Disallow: /contact
+Disallow: /contact/thank_you
+Disallow: /obratnaya-svyaz/privacy-policy
+Disallow: /stranitsa-ne-naidena
+
+User-agent: Googlebot
+Disallow: /contact
+Disallow: /contact/thank_you
+Disallow: /obratnaya-svyaz/privacy-policy
+Disallow: /stranitsa-ne-naidena
+
+Sitemap: http://krymphoto.ru/sitemap.xml
