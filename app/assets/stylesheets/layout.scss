@@ -8,8 +8,28 @@ body {
   color: #505050;
 }
 
-#headerbanner {
+.headerbanner {
   text-align: center;
+  margin-top: 15px;
+}
+
+#logo {
+  color: #482b15;
+  h1, p {
+    font-style: italic;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    margin-bottom: 30px;
+    font-size: 1.4em;
+  }
+  h1 {
+    text-align: center;
+    margin: 20px 10px 5px;
+  }
 }
 
 #page_container:after {
@@ -40,10 +60,6 @@ body {
 
 #header {
   padding-top: 30px;
-  h1 {
-    text-align: center;
-    margin: 20px 10px 50px;
-  }
 }
 
 .foto {

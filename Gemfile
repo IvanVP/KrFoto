@@ -72,7 +72,9 @@ gem 'refinerycms-inquiries', git: 'https://github.com/refinery/refinerycms-inqui
 
 gem 'refinerycms-page-images', git: 'https://github.com/refinery/refinerycms-page-images', branch: 'master'
 gem 'refinerycms-news', git: 'https://github.com/refinery/refinerycms-news', branch: 'master'
-# gem 'refinerycms-blog', git: 'https://github.com/refinery/refinerycms-blog', branch: 'master'
+gem 'refinerycms-blog', git: 'https://github.com/refinery/refinerycms-blog', branch: 'master'
+
+# gem 'refinerycms-search', git: 'https://github.com/refinery/refinerycms-search', branch: 'master'
 
 
 # Add support for refinerycms-acts-as-indexed
