@@ -39,7 +39,7 @@ body {
   @include media($large-screen) {
     // This corrects white space for html tag
     // height: 12.3em;
-    height: 16.3em;
+    // height: 16.3em;
   }
 }
 
@@ -109,4 +109,7 @@ body {
   text-align: center;
   margin: 0 auto;
   // padding-top: 80px;
+}
+.privacy {
+  margin-top: 15px;
 }
