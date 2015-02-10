@@ -50,7 +50,7 @@ body {
     // @include omega();
     .left {@include span-columns(2);}
     .wrapper {
-      margin-bottom: 30px;
+      margin-bottom: 100px;
       @include outer-container;
       @include span-columns(10);
       .center { @include span-columns(9 of 12);}
@@ -108,5 +108,5 @@ body {
 .metrics {
   text-align: center;
   margin: 0 auto;
-  padding-top: 40px;
+  // padding-top: 80px;
 }

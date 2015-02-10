@@ -31,15 +31,15 @@
           </section>
         </div>
         
-        <!-- <footer>
+        <%# <footer> %>
           <%#= render "/refinery/footer" -%>
-        </footer> -->
+        <%#= </footer> %>
 
-      </div>
         <%= render "/refinery/javascripts" -%>
         <% if Rails.env == 'production' -%>
           <%= render "/refinery/metrics" -%>
         <% end -%>
+      </div>
     </div>
 
   </body>
