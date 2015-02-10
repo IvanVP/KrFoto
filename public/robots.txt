@@ -1,18 +1,22 @@
 # See http://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
 
-User-agent: *
-Disallow: /
+
 
 User-agent: Yandex
-Disallow: /contact
-Disallow: /contact/thank_you
-Disallow: /obratnaya-svyaz/privacy-policy
+Disallow: /contact*
+Disallow: /pages/privacy-policy
 Disallow: /stranitsa-ne-naidena
 
 User-agent: Googlebot
-Disallow: /contact
-Disallow: /contact/thank_you
-Disallow: /obratnaya-svyaz/privacy-policy
+Disallow: /contact*
+Disallow: /pages/privacy-policy
 Disallow: /stranitsa-ne-naidena
 
+User-agent: *
+Disallow: /contact*
+Disallow: /pages/privacy-policy
+Disallow: /stranitsa-ne-naidena
+
+
 Sitemap: http://krymphoto.ru/sitemap.xml
+Host: krymphoto.ru
