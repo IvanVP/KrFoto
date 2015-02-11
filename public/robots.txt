@@ -17,6 +17,4 @@ Disallow: /contact*
 Disallow: /pages/privacy-policy
 Disallow: /stranitsa-ne-naidena
 
-
-Sitemap: http://krymphoto.ru/sitemap.xml
 Host: krymphoto.ru

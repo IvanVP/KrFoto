@@ -1,5 +1,5 @@
 <% if refinery_user? && "#{controller_name}##{action_name}" !~ %r{preview#show} %>
-  <% unless admin? # all required JS included by backend. %>
+  <% unless admin? %>
     <% content_for :stylesheets, stylesheet_link_tag('refinery/site_bar') unless !!local_assigns[:exclude_css] %>
     <%= yield(:stylesheets) unless local_assigns[:head] || local_assigns[:exclude_css] %>
   <% end -%>
