@@ -1,6 +1,5 @@
 <% page_code = Refinery::Core.google_analytics_page_code.to_s.strip %>
 <% unless local_request? or refinery_user? or page_code =~ /^(UA-xxxxxx-x)?$/ -%>
-<!-- asynchronous google analytics snippet -->
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', '<%= page_code %>']);
