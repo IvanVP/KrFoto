@@ -14,21 +14,21 @@
 
         <div class="main">
 
-          <section class="left">
+          <div class="left">
             <%#= Refinery::Pages::MenuPresenter.new(refinery_menu_pages.children, self).to_html -%>
             <%#= SubMenuPresenter.new(sub_menu_pages(@page), self).to_html || "Новости" -%>
             <p>Новости</p>
-          </section>
+          </div>
 
-          <section class="wrapper">
-            <section class="center">
+          <div class="wrapper">
+            <div class="center">
               <%= yield %>
-            </section>
+            </div>
 
-            <section class="right">
+            <div class="right">
               <p> Поиск</p>
-            </section>
-          </section>
+            </div>
+          </div>
         </div>
         
         <%# <footer> %>
