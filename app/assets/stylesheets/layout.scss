@@ -111,7 +111,7 @@ footer {
   text-align: left;
   font-size: 0.9em;
   border-top: 2pt solid #482b15;
-  padding: 25px 15px 20px;
+  padding: 20px 15px 20px;
 
 
   margin: 20px 0px 0px;
@@ -134,13 +134,18 @@ footer {
 }
 .footer-center {
   margin-left: 20px;
+  padding-top: 10px;
   padding-left: 25px;
   width: 30%;
 }
 .footer-links{
+  padding-top: 10px;
+
   width: 20%;
 }
 .footer-metrics{
+  padding-top: 10px;
+
   float: right;
 }
 
