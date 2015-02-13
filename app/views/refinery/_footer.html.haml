@@ -1,2 +1,23 @@
-%p
-  = t('.copyright', :year => Time.now.year, :site_name => Refinery::Core.site_name)
+
+.footer-logo
+  = link_to image_tag("krymphotologo.png", alt: "Логотип сайта Фото Крыма", title: "Логотип сайта Фото Крыма", rel: "nofollow"), refinery.root_path
+.footer-center
+  %noindex
+    %p
+      = t('.copyright', :year => Time.now.year, :site_name => Refinery::Core.site_name)
+    %p.copy Копирование материалов разрешено только с указанием активной ссылки на сайт "Фото Крыма"
+
+.footer-links
+  %noindex
+    %ul
+      %li
+      = link_to "Обратная связь", "/contact", rel: "nofollow"
+      %li
+      = link_to "Реклама на сайте", "/reklama-na-saite", rel: "nofollow"
+      %li
+      =# link_to "Карта сайта", refinery.root_path, rel: "nofollow"
+
+.footer-metrics
+  %noindex
+    - if Rails.env == 'production'
+      = render "/refinery/metrics"
