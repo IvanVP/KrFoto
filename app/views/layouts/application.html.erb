@@ -8,7 +8,7 @@
     <%= site_bar -%>
 
     <div id="container" class="texture-normal">
-      <div id="page_container" class="texture-normal">
+      <div id="page_container">
         <%= render "/refinery/header" -%>
         <%= render "/refinery/menu" -%>
 
@@ -17,7 +17,7 @@
           <div class="left">
             <%#= Refinery::Pages::MenuPresenter.new(refinery_menu_pages.children, self).to_html -%>
             <%#= SubMenuPresenter.new(sub_menu_pages(@page), self).to_html || "Новости" -%>
-            <p>Новости</p>
+            <p></p>
           </div>
 
           <div class="wrapper">
@@ -26,7 +26,7 @@
             </div>
 
             <div class="right">
-              <p> Поиск</p>
+              <p></p>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@
         <footer>
           <%= render "/refinery/footer" -%>
         </footer> 
-        
+
 
         <%= render "/refinery/javascripts" -%>
         
