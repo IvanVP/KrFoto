@@ -8,6 +8,11 @@ body {
   color: #505050;
 }
 
+.imglogo {
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
 .headerbanner {
   text-align: center;
   margin-top: 15px;
@@ -31,6 +36,7 @@ p#rightheadtext {
   font-weight: bold;
   margin: 20px 10px 0px;
  }
+
 
 #page_container:after {
   content: "";
@@ -64,14 +70,10 @@ p#rightheadtext {
 }
 
 #header {
+  padding-top: 10px;
   .main{
-    .wrapper { margin-bottom: 30px;}
+    .wrapper { margin-bottom: 15px;}
   }
-
-}
-
-#header {
-  padding-top: 30px;
 }
 
 .foto {
@@ -130,7 +132,8 @@ footer {
 }
 .footer-logo {
   width: 10%;
-  padding: 5px;
+  // padding: 5px 5px 5px;
+  padding-left: 15px;
 }
 .footer-center {
   margin-left: 20px;
@@ -148,7 +151,6 @@ footer {
 
   float: right;
 }
-
 
 .metrics {
   text-align: center;

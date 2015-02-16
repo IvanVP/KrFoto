@@ -1,4 +1,15 @@
 GIT
+  remote: git://github.com/bisscomm/refinerycms-products.git
+  revision: 6241529564c4a9fb8cb39fc7d3bd6455773ed52f
+  branch: master
+  specs:
+    refinerycms-products (3.0.0)
+      awesome_nested_set (~> 3.0.0)
+      refinerycms-acts-as-indexed (~> 2.0.0)
+      refinerycms-core (~> 3.0.0)
+      refinerycms-page-images (~> 3.0.0)
+
+GIT
   remote: https://github.com/airblade/paper_trail
   revision: 4ced77bdad5dc813a123a6bc40e3cd291181886a
   branch: master
@@ -427,6 +438,7 @@ DEPENDENCIES
   refinerycms-i18n!
   refinerycms-inquiries!
   refinerycms-page-images!
+  refinerycms-products!
   refinerycms-settings!
   refinerycms-wymeditor (~> 1.0, >= 1.0.0)
   rspec-rails

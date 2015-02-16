@@ -1,12 +1,12 @@
 %header#header
   .main
-    %div.left
+    .left.imglogo
       =# link_to Refinery::Core.site_name, refinery.root_path
       = link_to image_tag("krymphotologo.png", alt: "Логотип сайта Фото Крыма", title: "Логотип сайта Фото Крыма"), refinery.root_path, rel: "nofollow"
-    %div.wrapper
-      %div.center.headerbanner
+    .wrapper
+      .center.headerbanner
         = image_tag("banner.jpg", alt: "Панорама Крыма", title: "Панорама Крыма")
-      %div.right#logo
+      .right#logo
         %p#rightheadtext
           Фото Крыма
         %p
