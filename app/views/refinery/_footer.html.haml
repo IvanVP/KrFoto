@@ -17,7 +17,10 @@
       %li
       =# link_to "Карта сайта", refinery.root_path, rel: "nofollow"
 
+.socialfooter
+  =render "/refinery/socialfooter"
+
 .footer-metrics
   %noindex
-    -# if Rails.env == 'production'
-    = render "/refinery/metrics"
+    - if Rails.env == 'production'
+      = render "/refinery/metrics"

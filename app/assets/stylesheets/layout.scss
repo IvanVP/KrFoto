@@ -126,13 +126,10 @@ footer {
   p.copy{
     font-size: 0.85em;
   }
-
-
-
 }
+
 .footer-logo {
   width: 10%;
-  // padding: 5px 5px 5px;
   padding-left: 15px;
 }
 .footer-center {
@@ -143,19 +140,22 @@ footer {
 }
 .footer-links{
   padding-top: 10px;
+  width: 17%;
+}
 
-  width: 20%;
+.socialfooter{
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 25%;
 }
 .footer-metrics{
   padding-top: 10px;
-
   float: right;
 }
 
 .metrics {
   text-align: center;
   margin: 0 auto;
-  // padding-top: 80px;
 }
 .privacy {
   margin-top: 15px;
