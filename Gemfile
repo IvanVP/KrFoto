@@ -15,7 +15,7 @@ group :development, :test do
   # gem 'sqlite3'
   # gem 'thin', '~> 1.6.3'
   gem 'capistrano', '~> 2.15.5'
-  gem 'rvm-capistrano'
+  gem 'rvm-capistrano'#, require: false
   gem 'capistrano-seed', '~> 0.0.2'
   gem 'debugger'
   gem 'quiet_assets'
@@ -25,11 +25,11 @@ group :development, :test do
   # gem 'faker'
 
   gem 'spring'
-  gem 'guard-spring'
+  # gem 'guard-spring'
   gem 'rspec-rails'
   gem 'spring-commands-rspec'
-  gem 'guard-rspec'
-  gem 'guard-cucumber'
+  # gem 'guard-rspec'
+  # gem 'guard-cucumber'
   gem "spring-commands-cucumber"
   # gem 'rspec-activemodel-mocks'
   # gem 'factory_girl_rails'
@@ -77,7 +77,7 @@ gem 'refinerycms-page-images', git: 'https://github.com/refinery/refinerycms-pag
 # gem 'refinerycms-search', git: 'https://github.com/refinery/refinerycms-search', branch: 'master'
 # gem 'refinerycms-search', git: 'https://github.com/anitagraham/refinerycms-search.git', branch: 'Refinery3'
 
-gem 'refinerycms-products', github: 'bisscomm/refinerycms-products', branch: 'master'
+# gem 'refinerycms-products', github: 'bisscomm/refinerycms-products', branch: 'master'
 
 
 # Add support for refinerycms-acts-as-indexed

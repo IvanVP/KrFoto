@@ -1,0 +1,6 @@
+<div class="breadcrumbs">
+<%= link_to Refinery::Core.site_name, refinery.root_path %> &gt;
+<% for page in @page.ancestors %>
+  <%= link_to page.title, page.url %> &gt;
+<% end %>
+</div>
