@@ -77,6 +77,8 @@ ru:
           reorder_pages_done: Сохранить такой порядок страниц
         records:
           no_pages_yet: Страниц ещё нет.
+    footer:
+        copyright: © %{site_name}, 2014 - %{year}      
   activerecord:
     models:
       refinery/page: страница

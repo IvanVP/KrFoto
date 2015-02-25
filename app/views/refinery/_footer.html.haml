@@ -1,8 +1,10 @@
 
-.footer-logo
-  = link_to image_tag("krymphotologo.png", alt: "Логотип сайта Фото Крыма", title: "Логотип сайта Фото Крыма"), refinery.root_path, rel: "nofollow"
-.footer-center
-  %noindex
+%noindex
+  .footer-logo
+    = link_to image_tag("krymphotologo.png", alt: "Логотип сайта Фото Крыма", title: "Логотип сайта Фото Крыма"), refinery.root_path, rel: "nofollow"
+
+%noindex
+  .footer-center
     %p
       = t('.copyright', :year => Time.now.year, :site_name => Refinery::Core.site_name)
     %p.copy Копирование материалов разрешено только с указанием активной ссылки на сайт "Фото Крыма"
@@ -11,11 +13,12 @@
   %noindex
     %ul
       %li
-      = link_to "Обратная связь", "/contact", rel: "nofollow"
+        = link_to "Обратная связь", "/contact", rel: "nofollow"
       %li
-      = link_to "Реклама на сайте", "/reklama-na-saite", rel: "nofollow"
-      %li
-      =# link_to "Карта сайта", refinery.root_path, rel: "nofollow"
+        = link_to "Реклама на сайте", "/reklama-na-saite", rel: "nofollow"
+  %ul  
+    %li
+      = link_to "Карта сайта", "/karta-saita"
 
 .socialfooter
   =render "/refinery/socialfooter"

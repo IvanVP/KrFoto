@@ -15,7 +15,7 @@ group :development, :test do
   # gem 'sqlite3'
   # gem 'thin', '~> 1.6.3'
   gem 'capistrano', '~> 2.15.5'
-  gem 'rvm-capistrano'#, require: false
+  gem 'rvm-capistrano', require: false
   gem 'capistrano-seed', '~> 0.0.2'
   gem 'debugger'
   gem 'quiet_assets'

@@ -5,11 +5,13 @@ Rails.application.routes.draw do
   #
   # We ask that you don't use the :as option here, as Refinery relies on it being the default of "refinery"
 
+  get '/sitemap.xml' => 'sitemap#show'
+  get '/karta-saita', :to => 'application#sitecard'#, :as => :sitecard
+
   Refinery::Core::Engine.routes.prepend do
     get '/sitemapsite.xml' => 'sitemap#index', :defaults => { :format => 'xml' }
   end
   
-  get '/sitemap.xml' => 'sitemap#show'
   mount Refinery::Core::Engine, at: '/'
 
 

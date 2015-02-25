@@ -1,0 +1,9 @@
+.sitemap.bigpage
+  %h2 Карта сайта
+  = link_to Refinery::Core.site_name, refinery.root_path, class: "smh"
+  - @pages.each do |page|
+    %ul
+      %li
+        = link_to page.title, refinery.url_for(page.url)
+        - if page.children.any?
+          = render :partial => 'sitemap/page', locals: {:page_children => page}
