@@ -1,7 +1,7 @@
 <div class="breadcrumbs">
-<%= link_to Refinery::Core.site_name, root_url %> &gt;
+<%= link_to Refinery::Core.site_name, root_url, title: Refinery::Core.site_name %> &gt;
 <% for page in @page.ancestors %>
   <%#= link_to page.title, page.url %> 
-  <%= link_to page.title, refinery.marketable_page_url(page.nested_url) %> &gt;
+  <%= link_to page.title, refinery.marketable_page_url(page.nested_url), title: page.title %> &gt;
 <% end %>
 </div>

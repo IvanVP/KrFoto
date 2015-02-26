@@ -1,6 +1,6 @@
-- page_children.children.live.each do |children_page|
+- page_children.children.each do |children_page|
   %ul
     %li
-      = link_to children_page.title, refinery.marketable_page_url(children_page.nested_url)
-      - if children_page.children.any?
-        = render 'sitemap/page', locals: {:page_children => children_page}
+      = link_to children_page.title, refinery.marketable_page_url(children_page.nested_url), title: children_page.title
+      - if children_page.children
+        = render :partial => 'sitemap/page', locals: {:page_children => children_page}
