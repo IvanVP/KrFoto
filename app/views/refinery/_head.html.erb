@@ -2,14 +2,19 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
 
-    <title><%= browser_title(yield(:title)) %></title>
+    <title><%#= browser_title(yield(:title)) %><%= my_browser_title(yield(:title)) %></title>
 
   <% if @meta.meta_description.present? -%>
     <%= raw %(<meta name="description" content="#{@meta.meta_description}" />) -%>
   <% else -%>
     <meta content='Уникальные фото Крыма будут Вашим путеводителем по богатому достопримечательностями полуострову. Фото Симферополя, Севастополя, Судака и других городов, фото пляжей, достопримечательностей, памятников.' name='description' /> 
   <% end -%>
+
+  <% if @page.keywords.present? -%>
+    <%= raw %(<meta name="keywords" content="#{@page.keywords}" />) -%>
+  <% else -%>
     <meta content="фото Крым Севастополь Симферополь Судак" name="keywords" />
+  <% end -%>
 
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
     <%= raw %(<link rel="canonical" href="#{request.protocol}#{request.host_with_port}#{@canonical}" />) if @canonical.present? -%>

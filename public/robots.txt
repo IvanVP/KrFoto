@@ -1,30 +1,35 @@
 
 User-agent: Yandex
 Disallow: /contact*
+Disallow: /pages*
 Disallow: /pages/privacy-policy
 Disallow: /stranitsa-ne-naidena
 Disallow: /reklama-na-saite
 
 User-Agent: YaDirectBot
 Disallow: /contact*
+Disallow: /pages*
 Disallow: /pages/privacy-policy
 Disallow: /stranitsa-ne-naidena
 Disallow: /reklama-na-saite
 
 User-agent: Googlebot
 Disallow: /contact*
+Disallow: /pages*
 Disallow: /pages/privacy-policy
 Disallow: /stranitsa-ne-naidena
 Disallow: /reklama-na-saite
 
 User-agent: MediaPartners-Google
 Disallow: /contact*
+Disallow: /pages*
 Disallow: /pages/privacy-policy
 Disallow: /stranitsa-ne-naidena
 Disallow: /reklama-na-saite
 
 User-agent: *
 Disallow: /contact*
+Disallow: /pages*
 Disallow: /pages/privacy-policy
 Disallow: /stranitsa-ne-naidena
 Disallow: /reklama-na-saite
