@@ -1,13 +1,10 @@
-%noindex
-  %p Сайт в социальных сетях:
-  -#
-    =#link_to "/", target: '_blank', rel: "nofollow"  do
-      .socialuser_footer{class: "vkontakte"}
-    =#link_to "/", target: '_blank', rel: "nofollow" do
-      .socialuser_footer{class: "twitter"}
-    =#link_to "/", target: '_blank', rel: "nofollow" do
-      .socialuser_footer{class: "odnoklassniki"}
-    =#link_to "/", target: '_blank', rel: "nofollow" do
-      .socialuser_footer{class: "facebook"}
-    =#link_to "/", target: '_blank', rel: "nofollow" do
-      .socialuser_footer{class: "googleplus"}
+<!--noindex-->
+%p Сайт в социальных сетях:
+
+=#link_to "/", target: '_blank', rel: "nofollow"  do  -#.socialuser_footer{class: "vkontakte"}
+=#link_to "/", target: '_blank', rel: "nofollow" do  -#.socialuser_footer{class: "twitter"}
+=#link_to "/", target: '_blank', rel: "nofollow" do  -#.socialuser_footer{class: "odnoklassniki"}
+=#link_to "/", target: '_blank', rel: "nofollow" do  -#.socialuser_footer{class: "facebook"}
+=link_to "/", target: '_blank', rel: "nofollow" do
+  .socialuser_footer{class: "googleplus"}
+<!--noindex-->

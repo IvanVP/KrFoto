@@ -1,21 +1,25 @@
 
-%noindex
-  .footer-logo
-    = link_to image_tag("krymphotologo.png", alt: "Логотип сайта Фото Крыма", title: "Логотип сайта Фото Крыма"), refinery.root_path, rel: "nofollow"
 
-%noindex
-  .footer-center
-    %p
-      = t('.copyright', :year => Time.now.year, :site_name => Refinery::Core.site_name)
-    %p.copy Копирование материалов разрешено только с указанием активной ссылки на сайт "Фото Крыма"
+.footer-logo
+  <!--noindex-->
+  = link_to image_tag("krymphotologo.png", alt: "Логотип сайта Фото Крыма", title: "Логотип сайта Фото Крыма"), refinery.root_path, rel: "nofollow"
+  <!--/noindex-->
+
+.footer-center
+  <!--noindex-->
+  %p
+    = t('.copyright', :year => Time.now.year, :site_name => Refinery::Core.site_name)
+  %p.copy Копирование материалов разрешено только с указанием активной ссылки на сайт "Фото Крыма"
+  <!--/noindex-->
 
 .footer-links
-  %noindex
-    %ul
-      %li
-        = link_to "Обратная связь", "/contact", rel: "nofollow", title: "Обратная связь"
-      %li
-        = link_to "Реклама на сайте", "/reklama-na-saite", rel: "nofollow", title: "Реклама на сайте"
+  %ul
+    <!--noindex-->
+    %li
+      = link_to "Обратная связь", "/contact", rel: "nofollow", title: "Обратная связь"
+    %li
+      = link_to "Реклама на сайте", "/reklama-na-saite", rel: "nofollow", title: "Реклама на сайте"
+    <!--/noindex-->
   %ul  
     %li
       = link_to "Карта сайта", "/karta-saita", title: "Карта сайта"
@@ -24,6 +28,7 @@
   =render "/refinery/socialfooter"
 
 .footer-metrics
-  %noindex
-    - if Rails.env == 'production'
-      = render "/refinery/metrics"
+  <!--noindex-->
+  - if Rails.env == 'production'
+    = render "/refinery/metrics"
+  <!--/noindex-->
