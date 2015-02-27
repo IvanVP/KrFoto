@@ -111,7 +111,7 @@ p#rightheadtext {
 }
 
 
-footer {
+.footer {
   // @include outer-container;
   @include span-columns(12);
   text-align: left;
