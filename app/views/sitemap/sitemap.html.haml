@@ -11,3 +11,5 @@
             =# link_to page.title, refinery.url_for(page.url)
             - if page.children.any?
               = render :partial => 'sitemap/page', locals: {:page_children => page}
+
+  =# Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html

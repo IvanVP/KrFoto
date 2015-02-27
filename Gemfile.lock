@@ -101,6 +101,15 @@ GIT
       refinerycms-pages (~> 3.0.0)
 
 GIT
+  remote: https://github.com/refinery/refinerycms-search
+  revision: 2dbe32fcc2441c850fe2d7466717c4e0726d08a9
+  branch: master
+  specs:
+    refinerycms-search (3.0.0)
+      refinerycms-acts-as-indexed (~> 2.0.1)
+      refinerycms-core (~> 3.0.0)
+
+GIT
   remote: https://github.com/refinery/refinerycms-settings
   revision: 10c12da53e0c6a793497c43f6cdd2f17a97e9632
   branch: master
@@ -365,6 +374,7 @@ DEPENDENCIES
   refinerycms-i18n!
   refinerycms-inquiries!
   refinerycms-page-images!
+  refinerycms-search!
   refinerycms-settings!
   refinerycms-wymeditor (~> 1.0, >= 1.0.0)
   rspec-rails

@@ -74,7 +74,8 @@ gem 'refinerycms-page-images', git: 'https://github.com/refinery/refinerycms-pag
 # gem 'refinerycms-news', git: 'https://github.com/refinery/refinerycms-news', branch: 'master'
 # gem 'refinerycms-blog', git: 'https://github.com/refinery/refinerycms-blog', branch: 'master'
 
-# gem 'refinerycms-search', git: 'https://github.com/refinery/refinerycms-search', branch: 'master'
+gem 'refinerycms-search', git: 'https://github.com/refinery/refinerycms-search', branch: 'master'
+
 # gem 'refinerycms-search', git: 'https://github.com/anitagraham/refinerycms-search.git', branch: 'Refinery3'
 
 # gem 'refinerycms-products', github: 'bisscomm/refinerycms-products', branch: 'master'

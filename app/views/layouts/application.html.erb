@@ -15,9 +15,10 @@
         <div class="main">
 
           <div class="left">
-            <%#= Refinery::Pages::MenuPresenter.new(refinery_menu_pages.children, self).to_html -%>
+            <%#= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html -%>
             <%#= SubMenuPresenter.new(sub_menu_pages(@page), self).to_html || "Новости" -%>
-            <p></p>
+            <p> </p>
+            <%#= render "/refinery/search" -%>
           </div>
 
           <div class="wrapper">
