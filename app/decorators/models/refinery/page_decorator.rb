@@ -4,6 +4,6 @@ Refinery::Page.class_eval do
     text.to_slug.normalize! :transliterations => :russian #[:russian, :latin]
   end
 
-  acts_as_indexed :fields => [:title, :body]
+  # acts_as_indexed :fields => [:title, :body]
   
 end
